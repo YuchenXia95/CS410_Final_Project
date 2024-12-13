@@ -322,7 +322,8 @@ print(f"Win Rate: {win_rate:.2f}%")
 print(f"Maximum Drawdown: ${max_drawdown:.2f}")
 ```
 ## Printed Results
-### Using Adjusted Close Price Only in X:
+No improvement can be found in all the three models in terms of F1 score and accuracy. They all had same directional predictions on prices.
+
               precision    recall  f1-score   support
 
            0       0.25      0.25      0.25         4
@@ -332,34 +333,41 @@ print(f"Maximum Drawdown: ${max_drawdown:.2f}")
    macro avg       0.38      0.38      0.38        10
 weighted avg       0.40      0.40      0.40        10
 
-### Using Adjusted Close Price + SentimentScore_BLOB:
-Improvement found here
               precision    recall  f1-score   support
 
-           0       0.40      0.67      0.50         3
-           1       0.75      0.50      0.60         6
+           0       0.25      0.25      0.25         4
+           1       0.50      0.50      0.50         6
 
-    accuracy                           0.56         9
-   macro avg       0.57      0.58      0.55         9
-weighted avg       0.63      0.56      0.57         9
+    accuracy                           0.40        10
+   macro avg       0.38      0.38      0.38        10
+weighted avg       0.40      0.40      0.40        10
 
-### Using Adjusted Close Price + SentimentScore_VADER:
               precision    recall  f1-score   support
 
-           0       0.25      0.33      0.29         3
-           1       0.60      0.50      0.55         6
+           0       0.25      0.25      0.25         4
+           1       0.50      0.50      0.50         6
 
-    accuracy                           0.44         9
-   macro avg       0.42      0.42      0.42         9
-weighted avg       0.48      0.44      0.46         9
+    accuracy                           0.40        10
+   macro avg       0.38      0.38      0.38        10
+weighted avg       0.40      0.40      0.40        10
 
-### Using Adjusted Close Price + SentimentScore_BERT:
+              precision    recall  f1-score   support
+
+           0       0.25      0.25      0.25         4
+           1       0.50      0.50      0.50         6
+
+    accuracy                           0.40        10
+   macro avg       0.38      0.38      0.38        10
+weighted avg       0.40      0.40      0.40        10
+
+
+
 
 ### Financial Results:
 BLOB and VADER have same return as below:
-Total Profit: $347.91
-Average Daily Return: 0.79%
-Win Rate: 55.56%
+Total Profit: $384.48
+Average Daily Return: 0.85%
+Win Rate: 56.52%
 Maximum Drawdown: $244.86
 BERT has 0 profit mostly because most signals are neutral. Potential hypothesis is that the dataset is a bit biased.
 
