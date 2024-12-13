@@ -331,6 +331,7 @@ print(f"Maximum Drawdown: ${max_drawdown:.2f}")
     accuracy                           0.40        10
    macro avg       0.38      0.38      0.38        10
 weighted avg       0.40      0.40      0.40        10
+
 ### Using Adjusted Close Price + SentimentScore_BLOB:
 Improvement found here
               precision    recall  f1-score   support
@@ -341,6 +342,7 @@ Improvement found here
     accuracy                           0.56         9
    macro avg       0.57      0.58      0.55         9
 weighted avg       0.63      0.56      0.57         9
+
 ### Using Adjusted Close Price + SentimentScore_VADER:
               precision    recall  f1-score   support
 
@@ -359,5 +361,5 @@ Total Profit: $347.91
 Average Daily Return: 0.79%
 Win Rate: 55.56%
 Maximum Drawdown: $244.86
-BERT has 0 profit.
+BERT has 0 profit mostly because most signals are neutral. Potential hypothesis is that the dataset is a bit biased.
 
