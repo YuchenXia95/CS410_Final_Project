@@ -1,4 +1,7 @@
 # CS410_Final_Project
+# Video Link:
+
+
 ## Package Installation
 To install all required packages, you can use the environment file I provided as Final_Project_CS410.yaml and import it. All the packages were also specified in the code via import. I would suggest to use environment file, then run the code to see if anything got missed.
 
@@ -323,17 +326,7 @@ print(f"Maximum Drawdown: ${max_drawdown:.2f}")
 ```
 ## Printed Results
 No improvement can be found in all the three models in terms of F1 score and accuracy. They all had same directional predictions on prices.
-
-              precision    recall  f1-score   support
-
-           0       0.25      0.25      0.25         4
-           1       0.50      0.50      0.50         6
-
-    accuracy                           0.40        10
-   macro avg       0.38      0.38      0.38        10
-weighted avg       0.40      0.40      0.40        10
-
-              precision    recall  f1-score   support
+             precision    recall  f1-score   support
 
            0       0.25      0.25      0.25         4
            1       0.50      0.50      0.50         6
@@ -341,6 +334,15 @@ weighted avg       0.40      0.40      0.40        10
     accuracy                           0.40        10
    macro avg       0.38      0.38      0.38        10
 weighted avg       0.40      0.40      0.40        10
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         4
+           1       0.43      0.50      0.46         6
+
+    accuracy                           0.30        10
+   macro avg       0.21      0.25      0.23        10
+weighted avg       0.26      0.30      0.28        10
 
               precision    recall  f1-score   support
 
@@ -370,4 +372,6 @@ Average Daily Return: 0.85%
 Win Rate: 56.52%
 Maximum Drawdown: $244.86
 BERT has 0 profit mostly because most signals are neutral. Potential hypothesis is that the dataset is a bit biased.
+
+
 
